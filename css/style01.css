@@ -51,6 +51,10 @@ header{
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.move{
+  margin-top:  20px;
+}
+
 #logo {
   width:  170px;
   height: 100px;
@@ -62,7 +66,7 @@ header{
 }
 
 .gradient {
-  background:  radial-gradient(lightblue, white);
+  background:  radial-gradient(lightgreen, white);
 }
 
 /* main section  */
@@ -72,6 +76,8 @@ header{
   margin-right: 5px;
   margin-left:  65px;
 }
+
+
 
 h5{
   font-family: 'Gloria Hallelujah', cursive;
@@ -89,6 +95,20 @@ h1 {
 }
 #img{
   margin-top: 5px;
+}
+input, select {
+  margin-top: 2px;
+  border:  2px solid darkgrey;
+
+}
+
+fieldset{
+  text-align: center;
+  margin-top:  30px;
+}
+
+form {
+  margin-left:  350px;
 }
 
 

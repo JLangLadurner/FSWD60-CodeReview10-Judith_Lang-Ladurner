@@ -24,26 +24,49 @@ require_once 'actions/db_connect.php';
   <link rel="stylesheet" type="text/css" href="css/style01.css">
    <title>Big Library  |  Add Media</title>
 
-   <style type="text/css">
-       fieldset {
-           margin: auto;
-           margin-top: 100px;
-           width: 50%;
-       }
-
-       table tr th {
-           padding-top: 20px;
-       }
-   </style>
-
 </head>
 <body>
+  <div class="container">
+    
+  <div class="row gradient">
+      <header>
+      <div class="col-lg-1">
+        <img id ="logo" src="img/fresh_logo_color.png">
+      </div>
+      <div class="col-lg-9 col-lg-offset-2 data" id="headingdata">
+        <h1>Welcome to my Big Library</h1>
+      </div>
+    </header>
+    </div>
+    <div class="row">
+    <nav class="navbar navbar-inverse">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="index.html"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.php">Home</a></li>
+          <!-- <li><a href="create.php">Create Media</a></li>
+          <li><a href="delete.php">Delete Delete</a></li> -->
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
 <fieldset>
    <legend>Add Media</legend>
 
    <form action="actions/a_create.php" method="post">
-       <table cellspacing="0" cellpadding="0">
+       <table cellspacing="1" cellpadding="1">
         
         <tr>
                <th>Media ID</th>
@@ -73,7 +96,7 @@ require_once 'actions/db_connect.php';
            </tr>
            <tr>
                <th>Date published</th>
-               <td><input type="text" name="pub_date" placeholder="Date" /></td>
+               <td><input type="text" name="pub_date" placeholder="JJJJ-MM-DD" /></td>
            </tr>
            <tr>
                <th>Pusblisher</th>
@@ -148,13 +171,19 @@ require_once 'actions/db_connect.php';
                <td><input type="text" name="image" placeholder="please insert picture URL" /></td>
            </tr>
            <tr>
-               <td><button type="submit">Insert Media</button></td>
-               <td><a href="index.php"><button type="button">Back</button></a></td>
+               <td><button class="btn btn-success move" type="submit">Insert Media</button></td>
+               <td><a href="index.php"><button class="btn btn-info move" type="button">Back</button></a></td>
            </tr>
        </table>
    </form>
 
 </fieldset>
+</div>
+    <footer id="myfoot" class="container text-center">
+      <img src="img/codefactory-vienna-logo.png" width="150px" height="50px" alt="codefactory">
+      <p>CodeReview 10 </p>
+      <p>&copy; Judith Lang-Ladurner  </p>
+    </footer>
 
 </body>
 </html>
